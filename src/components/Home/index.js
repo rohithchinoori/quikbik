@@ -15,12 +15,12 @@ const Home = () => (
     <div className="w-[800px]">
       <Header />
       <div className="bg-1">
-        <div className="bg-white flex flex-row items-center mt-3 shadow-sm pl-3 pr-3 justify-between p-[5px]">
-          <div className="flex items-center gap-[10px]">
+        <div className="cont-1">
+          <div className="head-cont">
             <h1 className="head">All POD Requests</h1>
             <p>Download POD</p>
           </div>
-          <div className="flex flex-row items-center border-[1px] p-1 rounded-[16px] h-[40px] w-[400px]">
+          <div className="input-cont">
             <IoSearchOutline size={20} />
             <input
               type="search"
@@ -28,58 +28,43 @@ const Home = () => (
               placeholder="Search"
             />
           </div>
-          <div className="flex items-center gap-2">
+          <div className="head-cont">
             <button className="flex flex-row items-center text-blue w-[150px] border border-[1px] p-1 pl-5 bg-gray-100 rounded-[10px]">
               Request POD <FaSquarePlus className="ml-2" />
             </button>
             <FaFilter className="fill-[blue]" />
           </div>
         </div>
-        <div className="bg-white ml-5 mt-5 rounded-[8px] shadow-md flex flex-row flex-wrap gap-[20px] p-[15px] h-[180px] w-[1200px]">
-          <div className="flex flex-row items-center gap-2 w-[350px]">
+        <div className="bg-2">
+          <div className="input-cont1">
             <label>LR / GR / Bilty Number</label>
-            <input
-              type="text"
-              className="bg-gray-100 h-[25px] p-1 border-[1px]"
-            />
+            <input type="text" className="input-s" />
           </div>
-          <div className="flex flex-row items-center gap-2 w-[350px]">
+          <div className="input-cont1">
             <label>Vehicle Number</label>
-            <input
-              type="text"
-              className="bg-gray-100 h-[25px] p-1 border-[1px]"
-            />
+            <input type="text" className="input-s" />
           </div>
-          <div className="flex flex-row items-center gap-2 w-[350px]">
+          <div className="input-cont1">
             <label>Select Vendor</label>
-            <input
-              type="text"
-              className="bg-gray-100 h-[25px] p-1 border-[1px]"
-            />
+            <input type="text" className="input-s" />
           </div>
-          <div className="flex flex-row items-center gap-2 w-[350px]">
+          <div className="input-cont1">
             <label>Vehicle Loading date</label>
-            <input
-              type="text"
-              className="bg-gray-100 h-[25px] p-1 border-[1px]"
-            />
+            <input type="text" className="input-s" />
           </div>
-          <div className="flex flex-row items-center gap-2 w-[350px]">
+          <div className="input-cont1">
             <label>Vendor Code</label>
-            <input
-              type="text"
-              className="bg-gray-100 h-[25px] p-1 border-[1px]"
-            />
+            <input type="text" className="input-s" />
           </div>
           <button className="but">Send Request</button>
         </div>
-        <div className="flex items-center gap-[20px] ml-5 mt-5">
-          <p className="text-[16px]">All POD Request (30)</p>
-          <p className="text-[16px] text-green-500">Received (30)</p>
-          <p className="text-[16px] text-red-500">Pending (30)</p>
-          <p className="text-[16px]">Downloaded (30)</p>
+        <div className="bg-3">
+          <p>All POD Request (30)</p>
+          <p className="text-green">Received (30)</p>
+          <p className="text-red">Pending (30)</p>
+          <p>Downloaded (30)</p>
         </div>
-        <ul className="table ml-5 mt-3 rounded-[8px] text-white">
+        <ul className="table">
           <li className="w-[30px]">S.no</li>
           <li className="w-[150px]">POD Requested Date</li>
           <li className="w-[170px]">LR / GR / Bilty Number</li>
@@ -90,60 +75,60 @@ const Home = () => (
           <li className="w-[50px]">Action</li>
           <li className="w-[100px]">Download</li>
         </ul>
-        <div className="bg-white ml-5  shadow-md gap-[20px] p-[15px] h-[250px] w-[1200px]">
-          <div className="flex items-center w-[1200px] h-[75px]">
-            <p className="w-[40px] flex items-center">
+        <div className="table-1">
+          <div className="table-2">
+            <p className="circle">
               <div className="bg-green-500 rounded-full h-[10px] w-[10px] mr-1"></div>
               1
             </p>
-            <p className="w-[180px]">16/02/2024</p>
-            <p className="w-[200px]">16/02/2024</p>
-            <p className="w-[120px]">HR 000000</p>
-            <p className="w-[180px]">16/02/2024</p>
-            <p className="w-[170px]">16022022</p>
-            <p className="w-[80px]">Received</p>
-            <select className="bg-gray-100 w-[100px] rounded-[5px]">
+            <p className="p1">16/02/2024</p>
+            <p className="p2">16/02/2024</p>
+            <p className="p3">HR 000000</p>
+            <p className="p1">16/02/2024</p>
+            <p className="p4">16022022</p>
+            <p className="p5">Received</p>
+            <select className="bg-gray-100 p6 rounded-[5px]">
               <option>Select</option>
             </select>
-            <button className="bg-gray-100 w-[80px] ml-2 rounded-[5px]">
+            <button className="bg-gray-100 p5 ml-2 rounded-[5px]">
               Download
             </button>
           </div>
           <hr />
-          <div className="flex items-center w-[1200px] h-[75px]">
-            <p className="w-[40px] flex items-center">
+          <div className="table-2">
+            <p className="circle">
               <div className="bg-green-500 rounded-full h-[10px] w-[10px] mr-1"></div>
               1
             </p>
-            <p className="w-[180px]">16/02/2024</p>
-            <p className="w-[200px]">16/02/2024</p>
-            <p className="w-[120px]">HR 000000</p>
-            <p className="w-[180px]">16/02/2024</p>
-            <p className="w-[170px]">16022022</p>
-            <p className="w-[80px]">Received</p>
-            <select className="bg-gray-100 w-[100px] rounded-[5px]">
+            <p className="p1">16/02/2024</p>
+            <p className="p2">16/02/2024</p>
+            <p className="p3">HR 000000</p>
+            <p className="p1">16/02/2024</p>
+            <p className="p4">16022022</p>
+            <p className="p5">Received</p>
+            <select className="bg-gray-100 p6 rounded-[5px]">
               <option>Select</option>
             </select>
-            <button className="bg-gray-100 w-[80px] ml-2 rounded-[5px]">
+            <button className="bg-gray-100 p5 ml-2 rounded-[5px]">
               Download
             </button>
           </div>
           <hr />
-          <div className="flex items-center w-[1200px] h-[70px]">
-            <p className="w-[40px] flex items-center">
+          <div className="table-2">
+            <p className="circle">
               <div className="bg-green-500 rounded-full h-[10px] w-[10px] mr-1"></div>
               1
             </p>
-            <p className="w-[180px]">16/02/2024</p>
-            <p className="w-[200px]">16/02/2024</p>
-            <p className="w-[120px]">HR 000000</p>
-            <p className="w-[180px]">16/02/2024</p>
-            <p className="w-[170px]">16022022</p>
-            <p className="w-[80px]">Received</p>
-            <select className="bg-gray-100 w-[100px] rounded-[5px]">
+            <p className="p1">16/02/2024</p>
+            <p className="p2">16/02/2024</p>
+            <p className="p3">HR 000000</p>
+            <p className="p1">16/02/2024</p>
+            <p className="p4">16022022</p>
+            <p className="p5">Received</p>
+            <select className="bg-gray-100 p6 rounded-[5px]">
               <option>Select</option>
             </select>
-            <button className="bg-gray-100 w-[80px] ml-2 rounded-[5px]">
+            <button className="bg-gray-100 p5 ml-2 rounded-[5px]">
               Download
             </button>
           </div>

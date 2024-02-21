@@ -7,9 +7,9 @@ const Slider = () => {
   const [selectedTab, setSelectedTab] = useState(0) // State to keep track of the selected tab
 
   return (
-    <div className="slide-bg shadow-md">
+    <div className="slide-bg">
       <div>
-        <div className="flex flex-row items-center gap-2">
+        <div className="slide-cont">
           <FaCircle size={30} />
           <h1 className="text-[20px] font-[600]">LOGO</h1>
         </div>
