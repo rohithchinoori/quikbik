@@ -1,0 +1,23 @@
+.header-bg {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 1280px;
+  height: 50px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+li {
+  margin: 10px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.select {
+  text-decoration: underline;
+}

@@ -1,7 +1,5 @@
-import FruitsCounter from './components/FruitsCounter'
-
 import './App.css'
+import Home from './components/Home'
 
-const App = () => <FruitsCounter />
-
+const App = () => <Home />
 export default App
